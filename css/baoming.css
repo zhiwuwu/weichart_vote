@@ -1,0 +1,64 @@
+.content{
+  padding: 5rem 5%;
+
+}
+.box{
+  border: 1px solid #bbb;
+  margin-bottom: 0.8rem;
+  position: relative;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  clear: both;
+
+}
+
+.box p{
+  color: #515151;
+  background-color: #bbb;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.box input{
+  color: #bbb;
+  width: 100%;
+  height: 2.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+textarea{
+  color: #bbb;
+  font-size: 1.2rem;
+}
+#slogan{
+  position: relative;
+}
+
+#introduction{
+  width: 100%;
+  padding: 0.5rem;
+}
+.introduction_note{
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  color: #bbb;
+}
+#address_all{
+  width: 100%;
+  padding: 0.5rem;
+}
+.btn{
+  padding: 5rem 15% 8rem;
+}
+.btn input{
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: #3DC03E;
+  color: #fff;
+  height: 4rem;
+  line-height: 4rem;
+  border-radius: 0.5rem;
+}

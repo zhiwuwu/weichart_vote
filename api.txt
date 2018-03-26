@@ -1,0 +1,158 @@
+
+域名：vote.yyy580.com.（暂时）
+注：{voteId}==表 vote_info 的 id, 可用 1 测试接口，除保存图片接口，其他接口均需带 voteId 参数
+例： /api/vote/1/info
+
+******报名接口，投票接口，需要防重复提交******
+
+1.获取投票项目信息接口
+接口地址：/api/vote/{voteId}/info
+请求方式：get
+(返回结果为固定格式，code=0 为成功，data 为结果)
+返回成功示例:
+{
+    "time": "2017-11-28 22:21:28",
+    "code": 0,
+    "msg": "操作成功",
+    "data": {
+        "id": 1,
+        "voteTitle": "投票测试",
+        "voteIntro": "投票项目测试......................",
+        "signBeginTime": "2017-11-18 14:46:41",
+        "signEndTime": "2017-11-30 14:46:41",
+        "signText": "报名须知。。。。。。",
+        "voteBeginTime": "2017-11-20 14:46:41",
+        "voteEndTime": "2017-12-18 14:46:41",
+        "voteText": "投票须知。。。。。。。。"
+    }
+}
+
+2.上传图片接口(form-data形式上传）
+地址：api/vote/img
+请求方式：post
+具体看demo
+
+3.报名接口
+地址：/api/vote/{voteId}/goods
+请求方式：post
+请求参数示例：()
+data: {
+        "openId": "1234",
+        "voteTopic": "QAZWS",
+        "intro": "简介啊啊啊",
+        "name": "测试",
+        "tel": "110",
+        "address": "中国",
+        "image": ""
+    }
+返回成功示例：
+{
+    "time": "2017-11-28 22:28:51",
+    "code": 0,
+    "msg": "操作成功",
+    "data": {
+        "goodsId": 1,
+        "signOrder": "1号",
+        "voteCount": 0,
+        "openId": "1234",
+        "voteTopic": "QAZWS",
+        "intro": "简介啊啊啊",
+        "name": "测试",
+        "tel": "110",
+        "address": "中国",
+        "image": "",
+        "auditStatus": 0
+    }
+}
+
+4.获取参赛物品详情接口
+地址：/api/vote/{voteId}/goods
+请求方式：get
+请求参数：goodsId
+请求示例：/api/vote/1/goods?goodsId=1
+成功返回：
+{
+    "time": "2017-11-28 22:28:51",
+    "code": 0,
+    "msg": "操作成功",
+    "data": {
+        "goodsId": 1,
+        "signOrder": "1号",
+        "voteCount": 0,
+        "openId": "1234",
+        "voteTopic": "QAZWS",
+        "intro": "简介啊啊啊",
+        "name": "测试",
+        "tel": "110",
+        "address": "中国",
+        "image": "",
+        "auditStatus": 0
+    }
+}
+
+5.模糊搜索参赛物品列表接口
+地址：/api/vote/{voteId}/list-goods
+请求方式：get
+请求参数：search
+请求示例：/api/vote/1/list-goods?search=1号
+成功返回：
+{
+    "time": "2017-11-30 15:12:08",
+    "code": 0,
+    "msg": "操作成功",
+    "data": [
+        {
+            "goodsId": 1,
+            "signOrder": "1号",
+            "voteCount": 6,
+            "openId": null,
+            "voteTopic": "QAZWS",
+            "intro": null,
+            "name": null,
+            "tel": null,
+            "address": null,
+            "image": ""
+        }
+    ]
+}
+
+6.票数排名接口
+地址：/api/vote/{voteId}/rank
+请求方式：get
+请求示例：/api/vote/1/rank
+成功返回：
+{
+    "time": "2017-11-30 15:41:37",
+    "code": 0,
+    "msg": "操作成功",
+    "data": {
+        "voteEndTime": "2017-12-18 14:46:41",
+        "list": [
+            {
+                "goodsId": 2,
+                "signOrder": "2号",
+                "voteCount": 11,
+                "voteTopic": "QAZWS"
+            },
+            {
+                "goodsId": 1,
+                "signOrder": "1号",
+                "voteCount": 6,
+                "voteTopic": "QAZWS"
+            }
+        ]
+    }
+}
+
+7.投票接口
+地址：/api/vote/{voteId}/voted
+请求方式：post
+请求参数：goodsId, openId
+请求示例：/api/vote/1/voted
+成功返回：
+{
+    "time": "2017-11-30 15:44:57",
+    "code": 0,
+    "msg": "操作成功",
+    "data": null
+}

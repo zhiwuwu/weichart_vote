@@ -1,0 +1,77 @@
+body{
+  background-color: #180885;
+}
+.notice{
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+  color: #fff;
+}
+.countdown_box{
+  background-color: #6D2CFC;
+  padding-bottom: 2rem;
+  border-bottom: 2px dashed #180885;
+  margin-bottom: 1rem;
+}
+.countdown_box p{
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+#countdown{
+  padding: 0 10%;
+}
+#countdown ul li{
+  float: left;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 0.5rem;
+  width: 20%;
+  margin: 0 2.5%;
+}
+.countdown_list ul li span,em{
+  font-size: 1.25rem;
+  color: #6D2CFC;
+  height: 2rem;
+  line-height: 2rem;
+  font-weight: normal;
+  display: inline-block;
+}
+section{
+  margin: 1rem;
+  margin-bottom: 0!important;
+}
+.top_box{
+  width: 100%;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  padding: 1rem;
+
+}
+.top_box .left,.right{
+  float: left;
+
+}
+.top_box .left{
+  width: 20%;
+  border-radius: 50%;
+  background: url("../photo/001.jpg") no-repeat center;
+  background-size:110%;
+}
+.top_box .right{
+  padding-left: 2rem;
+}
+.top_box .right ul li{
+  padding-bottom: 0.5rem;
+}
+.top_box .right ul li:nth-child(1){
+  font-size: 1.25rem;
+  color: #515151;
+}
+.top_box .right ul li:nth-child(2){
+  color: #F4D43D;
+}

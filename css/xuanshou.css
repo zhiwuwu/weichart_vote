@@ -1,0 +1,150 @@
+.notice{
+  display: block;
+  text-align: center;
+  line-height: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: 400;
+  background-color: #cdcdcd;
+  border-bottom: 1px dotted #bfbfbf;
+}
+.countdown_box{
+  padding-top: 1.5rem 0.5rem 0;
+
+}
+.countdown_box p{
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 1.25rem;
+  color:#bfbfbf;
+}
+#countdown{
+  padding: 0 10%;
+}
+#countdown ul li{
+  float: left;
+  color: #bfbfbf;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  border-radius: 0.5rem;
+  width: 20%;
+  margin: 0 2.5%;
+}
+.countdown_list ul li span,em{
+  font-size: 1.25rem;
+  height: 2rem;
+  line-height: 2rem;
+  font-weight: normal;
+  display: inline-block;
+}
+#slogan{
+  margin-top: 0.5rem;
+}
+.box{
+  border: 1px solid #e6e6e6;
+  margin-bottom: 0.8rem;
+  position: relative;
+  font-size: 1.25rem;
+}
+
+.box p{
+  color: #515151;
+  background-color: #e6e6e6;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+}
+.box span{
+  color: #bfbfbf;
+  display: block;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+}
+#introduction{
+  padding-bottom: 3rem;
+}
+.redu{
+  padding: 5% 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.redu .left,.right{
+  width: 47.25%;
+  background-color: #9B6DCF;
+  height: 3rem;
+  line-height: 3rem;
+  border-radius: 0.3rem;
+}
+.redu .left a{
+  color: #fff;
+  display: block;
+}
+.redu .right a{
+  color: #fff;
+  display: block;
+}
+.redu .left{
+  float: left;
+}
+.redu .right{
+  float: right;
+}
+.content{
+  padding-bottom: 5rem;
+}
+.content img{
+  padding: 1rem;
+}
+footer{
+  background-color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #cdcdcd;
+}
+footer .footer_box{
+  position: relative;
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  height: 3rem;
+  line-height: 3rem;
+}
+.yuan_box{
+  text-align: center;
+}
+.yuan_box img{
+  width: 35%;
+  padding-top: 0.5rem;
+}
+.yuan_box .dayuan{
+  width: 10.5%;
+  border-radius: 50%;
+  background-color: #9C1AC9;
+  position: fixed;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin:0 auto;
+  z-index: 100;
+}
+.yuan_box .xiaoyuan{
+position: absolute; left:50%; top:50%; transform:translate(-50%,-50%);
+  width: 80%;
+  border-radius: 50%;
+  background-color: #F1D9F9;
+}
+.yuan_box .xiaoyuan p{
+  font-size: 0.8em;
+}
+footer .footer_box:nth-child(1){
+  background: url("../img/shouye_2.png") no-repeat 1.5rem;
+  background-size: 15%;
+}
+footer .footer_box:nth-child(3){
+  background: url("../img/zuanshi.png") no-repeat 1.5rem;
+  background-size: 15%;
+}

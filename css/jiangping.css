@@ -1,0 +1,23 @@
+.content{
+  padding: 5rem 3%;
+}
+.box{
+  position: relative;
+  font-size: 1.25rem;
+  padding-bottom: 3rem;
+}
+.box em{
+  color: #515151;
+  background-color: #e6e6e6;
+  line-height: 2.5rem;
+  height: 2.5rem;
+  padding-left: 1rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+.box p{
+    padding-left: 0.5rem;
+    line-height: 2rem;
+    height: 2rem;
+    color: #8a8a8a;
+}
